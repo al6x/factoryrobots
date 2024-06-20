@@ -4,7 +4,7 @@
     "main": "node build/main.js",
     "test": "node build/test.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5.4.5"
   },
   "type": "module"
