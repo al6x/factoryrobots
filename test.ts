@@ -19,12 +19,8 @@ test("robot doesn't hit the wall", async () => {
 })
 
 test("calculate new position", () => {
-  let p = calculateNewPosition({ x: 0, y: 0 }, ['N', 'E'])
-  if (p.isError) throw new Error("shouldn't be an error")
-  assertEqual(p.result, { x: 1, y: 1 })
-
-  p = calculateNewPosition({ x: 0, y: 0 }, ['W'])
-  assert(p.isError)
+  assertEqual(calculateNewPosition({ x: 0, y: 0 }, ['N', 'E']), { isError: false, result: { x: 1, y: 1 } })
+  assertEqual(calculateNewPosition({ x: 0, y: 0 }, ['W']), { isError: true, error: 'Collision with the wall' })
 })
 
 function buildRobot(position: Position){
