@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "es2022",
+    "lib": ["dom", "es2022"],
+    "target": "es2022",
+    "rootDir": ".",
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "inlineSources": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "outDir": "build",
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "build",
+    "vendor",
+    "node_modules",
+  ]
+}

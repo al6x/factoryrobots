@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "main": "node build/main.js",
+    "test": "node build/test.js"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "type": "module"
+}
